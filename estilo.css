@@ -1,0 +1,339 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-color: black;
+}
+
+*{
+	text-decoration: none;
+}
+#barraTopo{
+	width: 100%;
+	height: 40px;
+	background-color: black;
+}
+
+/* Style all font awesome icons */
+.fa {
+   
+    font-size: 20px;
+    width: 30px;
+    text-decoration: none;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook,.fa-twitter,.fa-youtube,.fa-instagram,.glyphicon-envelope {
+    color:#C0C0C0;
+	display: inline-block;
+	 padding: 11px;
+}
+.email{
+	color:gray;
+}
+/* Add a hover effect if you want */
+.fa:hover,.email:hover, .login:hover{
+    color:white;
+	text-decoration: none;
+}
+
+.cadastreSe{
+	margin-left: 47%;
+	background-color: #3a8ed0;
+	color: white;
+    padding: 15px 10px 9px 10px;
+}
+.login{
+	text-align: right;
+	margin-left: 25px;
+}
+
+.cadastreSe,.login{
+	font-weight: 600;
+	}
+.nav-pills{
+	background-color: aliceblue;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#fundoMenu{
+	width: 100%;
+	height: 34px;
+	background-color: #3a8ed0;
+}
+
+header label{
+	color:white;
+	font-size: 25px;
+	display: block;
+	padding: 0px 10px;
+	width: 45px;
+	border-right: 1px solid #efefef;
+	display: none;
+	height: 34px;
+}
+
+header label:hover{
+	background-color: #013465;
+}
+
+
+#btn-menu{
+	display: none;
+}
+
+
+.menu ul {
+	list-style: none;
+	display: flex;
+	transition: all .5s;
+	justify-content: center;
+}
+
+.menu ul ul{
+    position: absolute;
+	visibility: hidden;
+ display: block;
+}
+
+.menu ul ul li{
+	background-color: #3a8ed0;
+color: white;
+	border-bottom: solid 1px white;
+}
+
+
+.menu ul li:hover ul{
+	visibility: visible;
+	z-index: 1;
+}
+
+.menu li a{
+	color: white;
+	text-decoration:none;
+	padding: 7px 30px 7px 30px;
+	display: block;
+	border-right: 1px solid #efefef;
+	
+}
+
+.menu li a:hover{
+ background-color: #013465;
+ 
+}
+
+.glyphicon-headphones,.glyphicon-earphone,.glyphicon-phone,.glyphicon-user,.glyphicon-briefcase,.glyphicon-comment,.glyphicon-globe,.glyphicon-send{
+	padding: 20px;
+	font-size: 50px;
+	float: left;
+	color: #3a8ed0;
+}
+
+.glyphicon-user{
+float: none;
+}
+
+.logo{
+	margin-top: 5px;
+
+}
+
+.btnSlide{
+	border-radius: 20px;
+	background-color: #3a8ed0;
+	border:none;
+	padding: 10px;
+}
+
+.glyphicon-headphones{
+	margin-left: 18%;
+}
+.glyphicon-briefcase{
+	margin-left: 16%;
+}
+.txt{
+	width: 800px;
+	padding: 10px;
+	display: block;
+	font-size: 17px;
+	text-align: justify;
+		 margin-left: auto;
+
+    margin-right: auto;
+}
+
+.titulo{
+	font-size: 40px;
+	padding: 10px;
+	float: left;
+	font-weight: 900;
+	color: #3a8ed0;
+}
+
+.fundoTxts{
+	background-color: #E0F8F7;
+	width: 100%;
+	height: 100%;
+}
+
+.img{
+	width: 33.33%;
+	float: left;
+	display: inline-block;
+}
+
+.rodape{
+	width: 100%;
+	background-color: #013465;
+	color: white;
+}
+.txtRodape{
+	text-align: center;
+		font-size: 14px;
+		margin: 40px;
+}
+
+.cadastreSe2{
+	display: none;
+}
+
+.login2{
+	display: none;
+}
+
+.imgSobre{
+	opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+.imgSobre:hover{
+	opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+@media(max-width: 435px){
+
+	.glyphicon-globe,.glyphicon-user{
+		display: none!important;
+	}	
+	.email{
+	margin-left: 50px;
+}
+	
+}
+
+@media(max-width: 550px){
+
+	.img{
+	width: 100%;
+}
+
+	.glyphicon-earphone,.glyphicon-comment{
+		margin-left: 5%!important;
+			}
+	.titulo{
+		font-size: 20px!important;
+	}
+		.email{
+	color:white;
+}
+}
+
+
+
+@media(max-width: 700px){
+
+	.cadastreSe{
+		display: none;
+	}
+
+	.login{
+		display: none;
+	}
+
+	h1{
+		display:none;
+	}
+
+	h3{
+		display:none;
+	}
+
+	.btnSlide{
+	padding: 5px;
+}
+
+.glyphicon-headphones,.glyphicon-phone,.glyphicon-briefcase,.glyphicon-send{
+	display: none;
+	}
+	.glyphicon-earphone,.glyphicon-comment{
+	margin-left: 16%;
+}
+
+
+}
+
+@media(max-width: 1050px){
+	.glyphicon-headphones,.glyphicon-earphone,.glyphicon-phone,.glyphicon-user,.glyphicon-briefcase,.glyphicon-comment,.glyphicon-globe,.glyphicon-send{
+	font-size: 37px;
+}
+	header label{
+	display: block;
+}
+
+h1{
+	font-size: 20px;
+}
+
+.menu ul{
+	position: absolute;
+	background-color: #3a8ed0;
+	width: 70%;
+	flex-direction: column;
+	margin-left: -100%;
+	z-index: 1;
+	margin-top: -6.5px;
+}
+
+.menu li a{
+	border-top:1px solid #efefef;
+	margin-left: -40px;
+}
+
+#btn-menu:checked ~ .menu ul {
+	margin-left: 0;
+}
+
+.titulo{
+	font-size: 25px;
+}
+
+.txt{
+	padding: 0px 5% 0px 5%;
+}
+
+
+
+}
+
+@media(max-width: 1200px){
+	.cadastreSe{
+		margin-left: 15%;
+	}
+
+	.glyphicon-headphones{
+	margin-left: 13%;
+}
+.glyphicon-briefcase{
+	margin-left: 11%;
+}
+
+.txt{
+	width: 100%;
+	display: inline-block;
+	padding: 0px 10% 0px 10%;
+}
+}

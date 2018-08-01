@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Em Santos</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+
+    #btn-menu{
+	display: none;
+}
+
+.menu{
+	font-size: 21px;
+
+}
+
+header{
+	background-color: #4169E1;
+	
+
+}
+header label{
+
+	color:white;
+	font-size: 25px;
+	display: block;
+	padding: 5px 10px;
+	width: 20px;
+	border-right: 1px solid #efefef;
+	display: none;
+}
+
+header label:hover{
+	background-color: 	#4169E1;
+
+}
+
+
+.menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	transition: all .5s;
+
+		
+
+}
+
+.menu ul ul{
+    position: absolute;
+	visibility: hidden;
+ display: block 
+}
+
+.menu ul ul li{
+
+	border-bottom: solid 1px white;
+}
+
+
+.menu ul li:hover ul{
+	visibility: visible;
+}
+
+.menu li a{
+	color: white;
+	text-decoration:none;
+	padding: 15px;
+	display: block;
+	border-right: 1px solid #efefef;
+	background-color: 	#4169E1;
+	
+}
+
+.menu li a:hover{
+ background-color: #000080;
+ 
+}
+
+
+
+@media(max-width: 1050px){
+	header label{
+	display: block;
+}
+	.menu{
+    height: 20px;
+	}
+
+.menu ul{
+	position: absolute;
+	background-color: #A9E2F3;
+	width: 70%;
+	flex-direction: column;
+	margin-left: -70%;
+}
+
+.menu li a{
+	border-top:1px solid #efefef;
+}
+
+#btn-menu:checked ~ .menu ul {
+	margin-left: 0;
+}
+
+}
+.col-md-4{
+  z-index: -10;
+}
+    
+  	.dir{
+      float: left;
+      margin-left:20px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+     	}
+  </style>
+</head>
+<body>
+    <img class="dir" src="logo.jpg" width="180px" />
+    <header>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu">&#9776;</label>
+        <nav class="menu">
+            <ul>
+                <li><a href="#" >Inicio</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Guias</a></li>
+                <li><a href="#">Contatos</a></li>
+                <li><a href="#">Dicas</a></li>
+                <li><a href="#">Embarcações</a></li>
+                </ul>
+        </nav>
+      </header>
+
+
+
+<div class="container-fluid">
+<h1>Exemplo de um site de notícias, aqui pode ser o título</h1>
+<i>Este texto pode ser um resumo da notícia que está acima, no caso a notícia principal, porém isso é apenas uma sugestão ficando a critério do cliênte a disposição dos elementos</i><hr>
+<div class="row">
+  <div class="col-md-4"><h2>Título da Foto</h2><img src="img/peixe.jpg"  width="100%">Este texto pode ser um resumo da notícia que está acima, porém isso é apenas uma sugestão ficando a critério do cliênte a disposição dos elementos</div>
+  <div class="col-md-4"> <h2>Título da Foto/Notícia</h2><img src="img/sol.jpg"  width="100%">Este texto pode ser um resumo da notícia que está acima, porém isso é apenas uma sugestão ficando a critério do cliênte a disposição dos elementos</div>
+  <div class="col-md-4"> <h2>Título da Foto</h2><img src="img/pesca.jpg"  width="100%">Este texto pode ser um resumo da notícia que está acima, porém isso é apenas uma sugestão ficando a critério do cliênte a disposição dos elementos</div>
+</div>
+
+
+<div class="row">
+  <div class="col-sm-3"><h2>Titulo do texto da notícia</h2>Aqui vai um pequeno resumo da notícia......o tamanho do resumo pode ser definido...exemplo: Deixar com 3 linhas e após...</div>
+  <div class="col-sm-3"><h2>Facíl administração do conteúdo</h2>Com um login e senha é possível adicionar, modificar ou remover notícias, se forma simples e rápida</div>
+  <div class="col-sm-3"><h2>Layout (Desenho do Site) Adaptado</h2>O Layout pode ser adaptado para o gosto do cliênte, aqui no caso estou usando um Framework chamado Bootstrap, porém posso montar com CSS e responsivo a gosto do cliênte</div>
+  <div class="col-sm-3"><h2>Item busca (no menu do site)</h2>Ao cadastrar uma notícia no site,ela será gravada no banco de dados, ao clicar em buscar irá aparecer as notícias que contenham alguma palavra igual a digitada na busca</div>
+</div>
+
+</div>
+
+
+
+
+</body>
+</html>
